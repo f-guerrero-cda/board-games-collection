@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BoardGamesCollection>  
+  <BoardGame>
+    <Name>Pandemic Legacy</Name>
+    <Year>2015</Year>
+    <Category>Environmental, Medical</Category>
+    <Players>2-4</Players>
+    <Description>Pandemic Legacy starts what will be one of the worst years in human history. Whether it is the worst year is up to the players, who must band together to save the world. Unlike in Pandemic, actions taken in one game of Pandemic Legacy affect all future games. Characters will change. Some may be lost. Heroes will emerge. And, of course, there are the diseases, which start under control, but soon...</Description>
+    <Image>pic2452831_md.png</Image>
+  </BoardGame>
+  <BoardGame>
+    <Name>FUSE</Name>
+    <Year>2015</Year>
+    <Category>Dice, Real-time</Category>
+    <Players>1-5</Players>
+    <Description>FUSE is a real-time co-operative game that employs 25 dice and 76 cards. Each game is set to a ten minute timer, and players must work together in that ten minutes to defuse all of the bombs. Each bomb is represented by a card which needs a certain combination of dice in order to defuse it. A player will draw a number of dice equal to the number of players out of a bag and roll them. Players must then decide who will get which dice, but each player must take one and only one.</Description>
+    <Image>pic2616611_md.jpg</Image>
+  </BoardGame>
+  <BoardGame>
+    <Name>Runebound</Name>
+    <Year>2015</Year>
+    <Category>Adventure, Dice, Exploration, Fantasy</Category>
+    <Players>2-4</Players>
+    <Description>Welcome to Terrinoth, adventurer! Runebound is a fantasy adventure board game for two to four players, inviting you to play as one of six heroes wandering the realm and taking whatever quests you may encounter. But all is not well in the realm: evil is awakening once more in the form of Margath the Dragonlord or the Corpse King, Vorakesh. Only you and your rival heroes stand a chance of stopping this threat before all Terrinoth is consumed in darkness.</Description>
+    <Image>pic2625790_md.jpg</Image>
+  </BoardGame>
+  <BoardGame>
+    <Name>Ghostbusters: The Board Game</Name>
+    <Year>2015</Year>
+    <Category>Movies / TV / Radio theme</Category>
+    <Players>1-4</Players>
+    <Description>Ghostbusters: The Board Game is an episodic adventure game for one to four players, who are charged with busting ghosts and sealing gates to the Spirit World. In the game, players choose one of the four Ghostbusters character figures — Peter Venkman, Egon Spengler, Winston Zeddemore and Ray Stantz — then select one of the game's pre-written scenarios, beginning a game session that lasts from 30 minutes to two hours, depending on the chosen scenario(s) and degree of difficulty. Each of the Ghostbusters has unique traits and talents that can assist the entire team, with highly co-operative gameplay. As players gain experience from banishing spirits, the Ghostbusters level up, gaining new abilities that help them take on greater challenges. The team can also hop in the Ecto-1, the Ghostbusters' converted ambulance, to help them quickly move through the city.</Description>
+    <Image>pic2731222_md.jpg</Image>
+  </BoardGame>
+  <BoardGame>
+    <Name>Arcadia Quest: Inferno</Name>
+    <Year>2016</Year>
+    <Category>Adventure, Fantasy, Miniatures</Category>
+    <Players>2-4</Players>
+    <Description>Inferno is a standalone expansion to Arcadia Quest. It is 100% compatible with the original base game and introduces four new Guilds: Sharks, Tigers, Crows, and Serpents. It will feature new types of heroes, such as Alchemists and Gladiators. There will be a new branching campaign system, and the storyline revolves around the guilds descending into a fiery abyss. There will be Brimstone cards that make the terrain risky to navigate, which operate similarly to the Tombstone cards from Arcadia Quest: Beyond the Grave.</Description>
+    <Image>pic2569660_md.png</Image>
+  </BoardGame>
+</BoardGamesCollection>

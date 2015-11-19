@@ -1,0 +1,119 @@
+﻿<div class="jumbotron">
+    <h1>Board Games Collection</h1>
+    <p class="lead">This is a simple application for storing and managing your Collection of Board Games.</p>
+    <h3> Enjoy!  :)</h3>
+</div>
+<div data-ng-controller="boardGameController" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <strong class="error">{{ error }}</strong>
+            <p data-ng-hide="addMode"><a data-ng-click="toggleAdd()" href="javascript:;" class="btn btn-primary">Add New Board Game</a></p>
+            <form name="addBoardGame" data-ng-show="addMode" style="width:600px;margin:0px auto;">
+                @*<div class="form-group">
+                    <label for="cid" class="col-sm-2 control-label">ID:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cid" placeholder="please enter id" data-ng-model="newboardGame.Id" required />
+                    </div>
+                </div>*@
+                <div class="form-group">
+                    <label for="cname" class="col-sm-2 control-label">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cname" placeholder="please enter the name of your game" data-ng-model="newboardGame.Name" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="year" class="col-sm-2 control-label">Year:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="year" placeholder="please enter the release year" data-ng-model="newboardGame.Age" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="category" class="col-sm-2 control-label">Category:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="category" placeholder="please enter some descriptive category(ies) for the game" data-ng-model="newboardGame.Category" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="players" class="col-sm-2 control-label">Players:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="players" placeholder="please enter the number of players (n-m)" data-ng-model="newboardGame.Players" required />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="description" class="col-sm-2 control-label">Description:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="description" placeholder="please enter a description" data-ng-model="newboardGame.Description" required />
+                    </div>
+                </div>
+                @*<div class="form-group">
+                    <label for="image" class="col-sm-2 control-label">Image:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="image" placeholder="please enter an image" data-ng-model="newboardGame.Image"/>
+                    </div>
+                </div>*@               
+                <br />
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <input type="submit" value="Add" data-ng-click="add()" data-ng-disabled="!addBoardGame.$valid" class="btn btn-primary" />
+                        <input type="button" value="Cancel" data-ng-click="toggleAdd()" class="btn btn-primary" />
+                    </div>
+                </div>
+                <br />
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <br />
+            <br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Year</th>
+                        <th>Category</th>
+                        <th>Players</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr data-ng-repeat="boardGame in boardGames">
+                        <td><strong data-ng-hide="boardGame.editMode">{{ boardGame.Id }}</strong></td>
+                        <td>
+                            <p data-ng-hide="boardGame.editMode">{{ boardGame.Name }}</p>
+                            <input data-ng-show="boardGame.editMode" type="text" data-ng-model="boardGame.Name" />
+                        </td>
+                        <td>
+                            <p data-ng-hide="boardGame.editMode">{{ boardGame.Year }}</p>
+                            <input data-ng-show="boardGame.editMode" type="text" data-ng-model="boardGame.Year" />
+                        </td>
+                        <td>
+                            <p data-ng-hide="boardGame.editMode">{{ boardGame.Category }}</p>
+                            <input data-ng-show="boardGame.editMode" type="text" data-ng-model="boardGame.Category" />
+                        </td>
+                        <td>
+                            <p data-ng-hide="boardGame.editMode">{{ boardGame.Players }}</p>
+                            <input data-ng-show="boardGame.editMode" type="text" data-ng-model="boardGame.Players" />
+                        </td>
+                        <td>
+                            <p data-ng-hide="boardGame.editMode">{{ boardGame.Description }}</p>
+                            <input data-ng-show="boardGame.editMode" type="text" data-ng-model="boardGame.Description" />
+                        </td>
+                        <td>
+                            <p data-ng-hide="boardGame.editMode"><a data-ng-click="toggleEdit(boardGame)" href="javascript:;">Edit</a> | <a data-ng-click="deleteBoardGame(boardGame)" href="javascript:;">Delete</a></p>
+                            <p data-ng-show="boardGame.editMode"><a data-ng-click="save(boardGame)" href="javascript:;">Save</a> | <a data-ng-click="toggleEdit(boardGame)" href="javascript:;">Cancel</a></p>
+                        </td>
+                    </tr>
+                </table>
+                <hr />
+            </div>
+        </div>
+    </div>
+    <div id="mydiv" data-ng-show="loading" style="">
+        <img src="Images/ajax-loader.gif" class="ajax-loader" style="align-content:center;float:initial;display:block;"/>
+    </div>
+</div>
